@@ -1,0 +1,41 @@
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 20px calc( 10% / 2);
+}
+
+th {
+    border-bottom: solid 2px lightgray;
+    padding: 5px;
+    margin: 0;
+    cursor: pointer;
+}
+
+th:hover{
+    background-color: lightgray;
+}
+
+tr {
+    width: 100%;
+}
+
+td {
+    text-align: center;
+    border-bottom: solid 1px lightgray;
+    padding: 10px;
+    line-height: 35px;
+}
+
+td > a{
+    margin: 0 3px 0 3px;
+}
+
+th > a{
+  color: blue;
+  text-align: center;
+  padding: 6px;
+  text-decoration: underline;
+  border-radius: 4px;
+  background-color: #ddd;
+  margin-bottom: 2px;
+}

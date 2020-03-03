@@ -1,12 +1,32 @@
-h1{
+h1 {
     margin-left: 20px;
 }
-.href-list{
+
+.href-list {
     margin-left: 20px;
     font-size: 18px;
 }
 
-.href-list a{
-    margin-right: 20px;
+.href-list a {
+    margin-right: 10px;
+    margin-left: 5px;
     color: white;
+}
+
+.href-list span {
+    margin-left: 10px;
+}
+
+.href-list>.item {
+    margin: 20px 0;
+}
+
+.github {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+.github > a{
+    color: lightblue;
 }

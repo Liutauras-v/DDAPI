@@ -28,12 +28,15 @@ define('LOC', 'other')
         if(!strpos($file, '@@@')){
             continue;
         }
+        $html .= '<div class = "item" >';
         $html .= ($i + 1) . ') ';
         $flavortext = explode('@@@', $file);
-        $html .= '<a href=./other/' . $dirs[$i] . '>' . $flavortext[0] . '</a><span>' . $flavortext[1] . '</span>';
+        $html .= '<a href=./other/' . $dirs[$i] . '>' . $flavortext[0] . '</a> | <span>' . $flavortext[1] . '</span></div>';
     }
     echo $html . '</div>';
     ?>
+
+<p class="github">Do you want to help me out? You can help me develop this page here: <a href="https://github.com/AlphaMod1/DDAPI/">https://github.com/AlphaMod1/DDAPI/</a></p>
 
 </body>
 
