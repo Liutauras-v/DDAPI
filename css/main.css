@@ -1,36 +1,66 @@
+:root {
+    --light: #fff;
+    --dark: #333;
+}
+
 body {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--light);
+    color: var(--dark);
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.darkmode span{
+    color: var(--light);
+}
+
+.fa {
+    color: var(--light);
+}
+
+.fa-gear{
+    font-size: 24px;
+    padding: 10px;
+    margin-top: 3px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.fa-gear:hover{
+    background-color: var(--light);
+    color: var(--dark);
+}
+
 .header {
-    overflow: hidden;
-    background-color: #f1f1f1;
+    height: 50px;
+    background-color: var(--dark);
     padding: 10px 10px;
 }
 
 .header a {
     float: left;
-    color: black;
+    color: var(--light);
     text-align: center;
     padding: 12px;
     text-decoration: none;
     font-size: 18px;
     line-height: 25px;
     border-radius: 4px;
+    transition: 0.3s;
 }
 
 .header a.logo {
     font-size: 25px;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 .header a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: var(--light);
+    color: var(--dark);
 }
 
 .header a.active {
@@ -40,6 +70,38 @@ body {
 
 .header-right {
     float: right;
+}
+
+.header-right > *{
+    margin-right: 5px;
+}
+
+#dropdown{
+    padding: 5px;
+    width: 200px;
+    position: absolute;
+    top: 57px;
+    right: -15px;
+    background-color: var(--dark);
+    border-radius: 0 0 0 10px;
+}
+
+.dropdown-not-visable{
+    display: none;
+}
+
+.gear-is-open{
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+.darkmode .text{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 35px;
+}
+
+.github > a{
+    color: orange;
 }
 
 @media screen and (max-width: 500px) {

@@ -10,7 +10,7 @@ h1 {
 .href-list a {
     margin-right: 10px;
     margin-left: 5px;
-    color: white;
+    color: var(--dark);
 }
 
 .href-list span {
@@ -25,8 +25,4 @@ h1 {
     position: absolute;
     bottom: 10px;
     left: 20px;
-}
-
-.github > a{
-    color: lightblue;
 }

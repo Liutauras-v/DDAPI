@@ -9,6 +9,8 @@ define('LOC', 'home')
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DDAPI</title>
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/switch.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
@@ -22,6 +24,8 @@ define('LOC', 'home')
 
     <p class="github">Do you want to help me out? You can help me develop this page here: <a href="https://github.com/AlphaMod1/DDAPI/">https://github.com/AlphaMod1/DDAPI/</a></p>
 
+    <script src="./js/darkmode.js"></script>
+    <script src='./js/main.js'></script>
 </body>
 
 </html>
