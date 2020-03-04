@@ -12,7 +12,7 @@
     require_once('./mod/header.php');
     // require_once('../../../__backdoor/Conn.php');
 
-    $db = new Conn();
+    //$db = new Conn();
     ?>
     <div class="index">
         <a href="./accounts.php">Manage accounts</a>
