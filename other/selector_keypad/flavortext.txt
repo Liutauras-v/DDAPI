@@ -1,0 +1,1 @@
+Selector Keypad@@@A keypad, that has buttons with random available selectors
