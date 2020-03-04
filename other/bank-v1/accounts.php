@@ -20,7 +20,7 @@
     for ($row = 0; $row < count($listData); $row++) {
         $html .= '<tr>';
         foreach ($listData[$row] as $key => $val) {
-            $html .= '<td '. ($key == 'balance' ? 'class=\'balance\' ': '' ). '>' . $val . ($key == 'balance' ? '€' : '') . '</td>';
+            $html .= '<td '. ($key == 'balance' ? 'class=\'balance\' ': '' ). '>' . htmlspecialchars($val) . ($key == 'balance' ? '€' : '') . '</td>';
         }
         $html .= '<td>
         <a href="./add_funds.php?&id=' . $listData[$row]['id'] . '">+</a>
