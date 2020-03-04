@@ -17,9 +17,9 @@
             $message = "Invalid data";
             echo "<script type='text/javascript'>
             alert('$message');
-            window.location.replace('http://127.0.0.1/bank/remove_funds.php');
+            window.location.replace('/ddapi/other/bank-v1/remove_funds.php');
             </script>";
-            header('http://127.0.0.1/bank/remove_funds.php');
+            header('/ddapi/other/bank-v1/remove_funds.php');
             die();
         }
         $listData = json_decode(file_get_contents('./db/db.json'), true);
@@ -30,18 +30,18 @@
                     $message = "Can\'t remove amount that resolves in below 0";
                     echo "<script type='text/javascript'>
                 alert('$message');
-                window.location.replace('http://127.0.0.1/bank/accounts.php');
+                window.location.replace('/ddapi/other/bank-v1/accounts.php');
                 </script>";
-                    header('http://127.0.0.1/bank/accounts.php');
+                    header('/ddapi/other/bank-v1/accounts.php');
                     die();
                 }
                 file_put_contents('./db/db.json', json_encode($listData));
                 $message = "Money has been removed";
                 echo "<script type='text/javascript'>
                 alert('$message');
-                window.location.replace('http://127.0.0.1/bank/accounts.php');
+                window.location.replace('/ddapi/other/bank-v1/accounts.php');
                 </script>";
-                header('http://127.0.0.1/bank/accounts.php');
+                header('/ddapi/other/bank-v1/accounts.php');
                 die();
             }
         }
@@ -49,9 +49,9 @@
         $message = "Can't find user with this IBAN";
         echo "<script type='text/javascript'>
         alert('$message');
-        window.location.replace('http://127.0.0.1/bank/remove_funds.php');
+        window.location.replace('/ddapi/other/bank-v1/remove_funds.php');
         </script>";
-        header('http://127.0.0.1/bank/remove_funds.php');
+        header('/ddapi/other/bank-v1/remove_funds.php');
         die();
     }
 

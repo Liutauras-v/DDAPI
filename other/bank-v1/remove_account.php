@@ -6,7 +6,7 @@
                 $message = "Can't delete a user with balance";
                 echo "<script type='text/javascript'>
                 alert('$message');
-                window.location.replace('http://127.0.0.1/bank/accounts.php');
+                window.location.replace('/ddapi/other/bank-v1/accounts.php');
                 </script>";
             }
             else{
@@ -16,8 +16,8 @@
     }
     file_put_contents('./db/db.json', json_encode($listData));
     echo "<script type='text/javascript'>
-    window.location.replace('http://127.0.0.1/bank/accounts.php');
+    window.location.replace('/ddapi/other/bank-v1/accounts.php');
     </script>";
-    header('http://127.0.0.1/bank/accounts.php');
+    header('/ddapi/other/bank-v1/accounts.php');
     die();
 ?>

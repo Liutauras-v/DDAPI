@@ -1,7 +1,6 @@
 <div class="header">
     <a href="./index.php" class="logo">Bank</a>
     <div class="header-right">
-      <a class="active" href="./index.php">Home</a>
-      <a href="">Log out</a>
+      <span class='time'>Current time: <?= date("Y/m/d h:i:s") ?></span>
     </div>
   </div>

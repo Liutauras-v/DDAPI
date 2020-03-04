@@ -17,9 +17,9 @@
             $message = "Invalid data";
             echo "<script type='text/javascript'>
             alert('$message');
-            window.location.replace('http://127.0.0.1/bank/add_funds.php');
+            window.location.replace('/ddapi/other/bank-v1/add_funds.php');
             </script>";
-            header('http://127.0.0.1/bank/add_funds.php');
+            header('/ddapi/other/bank-v1/add_funds.php');
             die();
         }
         $listData = json_decode(file_get_contents('./db/db.json'), true);
@@ -30,9 +30,9 @@
                 $message = "Money has been sent";
                 echo "<script type='text/javascript'>
                 alert('$message');
-                window.location.replace('http://127.0.0.1/bank/accounts.php');
+                window.location.replace('/ddapi/other/bank-v1/accounts.php');
                 </script>";
-                header('http://127.0.0.1/bank/accounts.php');
+                header('/ddapi/other/bank-v1/accounts.php');
                 die();
             }
         }
@@ -40,9 +40,9 @@
         $message = "Can't find user with this IBAN";
         echo "<script type='text/javascript'>
         alert('$message');
-        window.location.replace('http://127.0.0.1/bank/add_funds.php');
+        window.location.replace('/ddapi/other/bank-v1/add_funds.php');
         </script>";
-        header('http://127.0.0.1/bank/add_funds.php');
+        header('/ddapi/other/bank-v1/add_funds.php');
         die();
     }
 
