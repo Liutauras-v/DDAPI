@@ -39,7 +39,7 @@
         echo '<div id="output">' . htmlentities('Distance between ' . $_GET['from'] . ' and ' . $_GET['to'] . ' is ' . $dist . 'km') . '</div>';
     } else {
         if (isset($_GET['btn'])) {
-            echo '<br>Bad input data';
+            echo '<div id = "output">Bad input data</div>';
         }
     }
     ?>
