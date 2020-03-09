@@ -1,0 +1,22 @@
+#keypad{
+    display: inline-block;
+    width: 150px;
+    min-height: 150px;
+}
+
+#keypad *{
+    float: left;
+    background-color: #ccc;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#keypad *:nth-child(odd){
+    background-color: #eee;
+}
+
+#keypad *:hover{
+    background-color: lightskyblue;
+}
