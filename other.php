@@ -23,6 +23,7 @@ define('LOC', 'other')
     <?php
     $html = '<div class="href-list">';
     $dirs =  array_diff(scandir(__DIR__ . '/other', 1), array('..', '.'));
+    $counter = 1;
     for ($i = 0; $i < count($dirs); $i++) {
         if (!file_exists(__DIR__ . '/other/' . $dirs[$i] . '/flavortext.txt') || !($file = file_get_contents(__DIR__ . '/other/' . $dirs[$i] . '/flavortext.txt'))) {
             continue;
@@ -31,7 +32,7 @@ define('LOC', 'other')
             continue;
         }
         $html .= '<div class = "item" >';
-        $html .= ($i + 1) . ') ';
+        $html .= $counter++ . ') ';
         $flavortext = explode('@@@', $file);
         $html .= '<a href=./other/' . $dirs[$i] . '>' . $flavortext[0] . '</a> | <span>' . $flavortext[1] . '</span></div>';
     }
