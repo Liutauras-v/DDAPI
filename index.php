@@ -17,7 +17,7 @@ define('LOC', 'home')
 
 <body>
     <?php require_once(__DIR__ . '/views/header.php') ?>
-    <h1>Welcome to DDAPI</h1><br>
+    <h1>Welcome to DDAPI!</h1><br>
     <p>This is a basic website for testing.</p>
     <p>Read the "DOCS" to find out how to use API end points.</p>
     <p>And visit "other" tab, to do Selenium tests.</p>
