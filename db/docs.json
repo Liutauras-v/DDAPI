@@ -4,7 +4,7 @@
         "is_displayed": true,
         "method":"get",
         "end_point": "/api/user.php",
-        "description":"Gets all users",
+        "description":"Gets all user data",
         "args": null
     },
 
